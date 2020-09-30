@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 20px;
+  font-family: "Libre Franklin", sans-serif;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 50px 16px;
+  text-align: center;
+}
+.upper-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.upper-content img {
+  width: 25%;
+}
+.upper-content p {
+  font-weight: 300;
+  padding: 40px 0px 7px 0px;
+  font-size: 20px;
+}
+.upper-content span {
+  font-size: 12px;
+  padding-bottom: 24px;
+  color: hsl(209, 33%, 12%);
+}
+.input-btn-container {
+  width: 100%;
+  margin-bottom: 16px;
+}
+.input {
+  border: 1px solid hsla(223, 87%, 63%, 0.514);
+  border-radius: 500px;
+  padding: 10px;
+  width: 80%;
+  outline: none;
+  transition: transform ease-in-out 500ms;
+}
+
+/*ERROR CLASS*/
+
+.error {
+  border: 1px solid red;
+}
+.error-text {
+  margin-top: 4px;
+  font-size: 10px;
+  color: red;
+  font-weight: 300;
+}
+
+.input::placeholder {
+  color: hsl(223, 100%, 88%);
+  padding-left: 10px;
+}
+
+.input:focus {
+  border: 1px solid rgb(85, 214, 143);
+}
+
+.btn {
+  border: none;
+  background-color: hsl(223, 87%, 63%);
+  border-radius: 500px;
+  padding: 10px;
+  width: 80%;
+  color: #fff;
+  box-shadow: 0 6px 8px hsla(209, 100%, 64%, 0.2);
+  margin-top: 10px;
+  outline: none;
+  transition: transform ease-in-out 250ms;
+  cursor: pointer;
+}
+.btn:hover {
+  transform: scale(1.05);
+  background-color: rgb(85, 214, 143);
+  color: rgba(78, 78, 78, 0.836);
+}
+.dash {
+  width: 90%;
+  margin-bottom: 100px;
+}
+.social {
+  width: 30%;
+  display: flex;
+  justify-content: space-between;
+  color: hsl(223, 87%, 63%);
+}
+.foot p {
+  margin-top: 16px;
+  font-size: 11px;
+  color: hsl(0, 0%, 59%);
+}
+
+@media (min-width: 1024px) {
+  .upper-content p {
+    font-size: 35px;
+  }
+  .input-btn-container {
+    width: 55%;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+  }
+  .input {
+    width: 100%;
+  }
+  .btn {
+    width: 20%;
+    margin-left: 12px;
+    margin-top: 0;
+  }
+  .social {
+    justify-content: space-evenly;
+  }
+  .dash {
+    width: 50%;
+  }
+  .container-input {
+    width: 60%;
+  }
+  .error-text {
+    display: none;
+    text-align: start;
+    margin-left: 15px;
+  }
+}
